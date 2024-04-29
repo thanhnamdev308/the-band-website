@@ -1,0 +1,396 @@
+@import "header.css";
+
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Common */
+html {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+.clear {
+    clear: both;
+}
+
+/*
+1. Position
+2. Size (width, height)
+3. Color
+4. Font
+5. Shape
+*/
+
+
+/* Header */
+#Header {
+    height: 46px;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+#Nav {
+    display: inline-block;
+}
+
+#Nav li {
+    display: inline-block;
+    position: relative;
+}
+
+#Nav li a {
+    color: white;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+
+#NavList > li > a {
+    text-transform: uppercase;
+}
+
+#NavList > li:hover > a {
+    color: black;
+    background-color: #ccc;
+}
+
+#Nav .MoreNav {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#Nav .MoreNav a {
+    line-height: 38px;
+    color: #000;
+}
+
+.MoreNav li {
+    display: block !important;
+}
+
+.MoreNav li:hover {
+    color: black;
+    background-color: #ccc;
+}
+
+#Nav li:hover .MoreNav {
+    display: block;
+}
+
+.nav-arrow-down {
+    font-size: 12px;
+}
+
+#Header #Search {
+    float: right;
+}
+
+#Header #Search:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#Header .search-icon {
+    line-height: 46px;
+    padding: 0 25px;
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+/* Content */
+
+/* Banner */
+#Banner {
+    top: 46px;
+    padding-top: 50%;
+    position: relative;
+    background: url("../images/ny.jpg") top center / cover no-repeat;
+}
+
+#Banner #banner-text-content {
+    color: #fff;
+    position: absolute;
+    bottom: 47px;
+    width: 100%;
+    text-align: center;
+}
+
+#Banner #banner-name {
+    font-size: 24px;
+}
+
+#Banner #banner-description {
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 25px;
+}
+
+/* Instruction */
+.content-section {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-heading {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.section-subheading {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#Introduction {
+    padding-top: 100px !important;
+    padding-bottom: 64px !important;
+}
+
+#Introduction #intro-paragraph {
+    font-size: 15px;
+    margin-top: 25px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+#band-member {
+    margin-top: 48px;
+}
+
+.member-item {
+    float: left;
+    width: calc(100% / 3);
+    text-align: center;
+}
+
+.member-name {
+    font-size: 15px;
+}
+
+.member-image {
+    margin-top: 15px;
+    width: 154px;
+    border-radius: 4px;
+}
+
+/* Tourdates */
+#Tourdates {
+    background-color: #000;
+    padding-top: 64px !important;
+    padding-bottom: 64px !important;
+}
+
+.ticket-list {
+    background-color: #fff;
+    margin-top: 40px;
+    list-style: none;
+}
+
+.ticket-list li {
+    color: #757575;
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.sold-out {
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+
+.ticket-available {
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -3px;
+}
+
+.ticket-section {
+    width: 800px;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+}
+
+.place-list {
+    margin-left: -8px;
+    margin-right: -8px; 
+}
+
+.ticket-item {
+    float: left;
+    width: calc(100% / 3);
+    padding: 0 8px;
+}
+
+.ticket-image {
+    width: 100%;
+    display: block;
+}
+
+.ticket-image:hover {
+    opacity: 0.6;
+}
+
+.ticket-body{
+    background-color: #fff;
+    font-size: 15px;
+    padding: 16px;
+}
+
+.ticket-heading{
+    font-size: 16px;
+}
+
+.ticket-time{
+    margin-top: 15px;
+    color: #757575;
+}
+
+.ticket-desc{
+    margin-top: 15px;
+    line-height: 1.4;
+}
+
+.ticket-buy-button{
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 11px 36px;
+    display: inline-block;
+    margin-top: 24px;
+}
+
+.ticket-buy-button:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+
+/* Contact */
+
+/* Footer */
+
+/* Buy Ticket Modal */
+#buy-ticket-modal {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal-container {
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100% - 100px);
+    min-height: 200px;
+    position: relative;    
+}
+
+.modal-header {
+    background-color: #009688;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 130px;
+    font-size: 30px;
+    color: #fff;
+    letter-spacing: 4px;
+}
+
+.modal-ticket-heading {
+    padding-left: 16px;
+}
+
+#modal-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    padding: 12px;
+    cursor: pointer;
+}
+
+#modal-close:hover {
+    opacity: 0.6;
+}
+
+.modal-body {
+    padding: 16px;
+}
+
+.modal-label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.modal-input {
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+
+#pay-button {
+    background-color: #009688;
+    border: none;
+    width: 100%;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 17px;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+#pay-button:hover{
+    opacity: 0.6;
+}
+
+.modal-footer {
+    padding: 16px;
+    text-align: right;
+    font-size: 14px;
+}
+
+.modal-footer a {
+    color: #2196f3;
+}
