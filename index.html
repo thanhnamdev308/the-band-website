@@ -10,6 +10,7 @@
 
 <body>
     <div id="main">
+        <!-- Begin: Header section -->
         <div id="Header">
             <div id="Nav">
                 <ul id="NavList">
@@ -33,15 +34,20 @@
                 <i class="search-icon ti-search"></i>
             </div>
         </div>
+        <!-- End: Header section -->
 
+        <!-- Begin: Content section -->
         <div id="Content">
+            <!-- Begin: Banner section -->
             <div id="Banner">
                 <div id="banner-text-content">
                     <div id="banner-name">New York</div>
                     <div id="banner-description">The atmosphere in New York is lorem ipsum.</div>
                 </div>
             </div>
+            <!-- End: Banner section -->
 
+            <!-- Begin: Introduction section -->
             <div id="Introduction" class="content-section">
                 <h1 class="section-heading">The Band</h1>
                 <p class="section-subheading">We love music</p>
@@ -71,7 +77,9 @@
                     <div class="clear"></div>
                 </div>
             </div>
+            <!-- End: Introduction section -->
 
+            <!-- Begin: Tourdates section -->
             <div id="Tourdates">
                 <div class="content-section">
                     <h1 class="section-heading text-white">TOUR DATES</h1>
@@ -91,7 +99,9 @@
                                 <h3 class="ticket-heading">New York</h3>
                                 <p class="ticket-time">Fri 27 Nov 2016</p>
                                 <p class="ticket-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="ticket-buy-button" onclick="document.getElementById('buy-ticket-modal').style.display='flex'">Buy Tickets</button>
+                                <button class="ticket-buy-button"
+                                    onclick="document.getElementById('buy-ticket-modal').style.display='flex'">Buy
+                                    Tickets</button>
                             </div>
                         </div>
                         <div class="ticket-item">
@@ -100,7 +110,9 @@
                                 <h3 class="ticket-heading">Paris</h3>
                                 <p class="ticket-time">Sat 28 Nov 2016</p>
                                 <p class="ticket-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="ticket-buy-button" onclick="document.getElementById('buy-ticket-modal').style.display='flex'">Buy Tickets</button>
+                                <button class="ticket-buy-button"
+                                    onclick="document.getElementById('buy-ticket-modal').style.display='flex'">Buy
+                                    Tickets</button>
                             </div>
                         </div>
                         <div class="ticket-item">
@@ -109,27 +121,64 @@
                                 <h3 class="ticket-heading">San Francisco</h3>
                                 <p class="ticket-time">Sun 29 Nov 2016</p>
                                 <p class="ticket-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="ticket-buy-button" onclick="document.getElementById('buy-ticket-modal').style.display='flex'">Buy Tickets</button>
+                                <button class="ticket-buy-button"
+                                    onclick="document.getElementById('buy-ticket-modal').style.display='flex'">Buy
+                                    Tickets</button>
                             </div>
                         </div>
                         <div class="clear"></div>
                     </div>
                 </div>
             </div>
+            <!-- End: Tourdates section -->
 
+            <!-- Begin: Contact section -->
             <div id="Contact" class="content-section">
                 <h1 class="section-heading">CONTACT</h1>
                 <p class="section-subheading">Fan? Drop a note!</p>
+                <div id="contact-content">
+                    <div id="contact-info">
+                        <p><i class="ti-location-pin"></i> Chicago, US</p>
+                        <p><i class="ti-mobile"></i> Phone: +00 151515</p>
+                        <p><i class="ti-email"></i> Email: mail@mail.com</p>
+                    </div>
+                    <div id="contact-form">
+                        <form action="">
+                            <input type="text" id="name-contact-form" placeholder="Name" class="form-control">
+                            <input type="email" id="email-contact-form" placeholder="Email" class="form-control">
+                            <input type="text" id="message-contact-form" placeholder="Message" class="form-control">
+                            <input type="submit" value="Send" id="submit-form-button">
+                        </form>
+                    </div>
+                    <div class="clear"></div>
+                </div>
             </div>
-            <div id="Map"></div>
-        </div>
+            <!-- End: Contact section -->
 
-        <div id="Footer">
-            <div id="SocialNetwork"></div>
-            <div id="Copyright"></div>
+            <!-- Begin: Map section -->
+            <div id="Map">
+                <img src="assets/images/map.jpg" alt="map">
+            </div>
+            <!-- End: Map section -->
         </div>
+        <!-- End: Content section -->
+
+        <!-- Begin: Footer section -->
+        <div id="Footer">
+            <div id="SocialNetwork">
+                <a href="#"><i class="ti-facebook"></i></a>
+                <a href="#"><i class="ti-instagram"></i></a>
+                <a href="#"><i class="ti-github"></i></a>
+                <a href="#"><i class="ti-pinterest"></i></a>
+                <a href="#"><i class="ti-twitter"></i></a>
+                <a href="#"><i class="ti-linkedin"></i></a>
+            </div>
+            <div id="Copyright">Powered by <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a></div>
+        </div>
+        <!-- End: Footer section -->
     </div>
 
+    <!-- Begin: Modal section -->
     <div id="buy-ticket-modal">
         <div class="modal-container">
             <div id="modal-close" onclick="document.getElementById('buy-ticket-modal').style.display='none'">
@@ -164,6 +213,7 @@
             </footer>
         </div>
     </div>
+    <!-- End: Modal section -->
 
     <script>
         // When the user clicks anywhere outside of the modal, close it
