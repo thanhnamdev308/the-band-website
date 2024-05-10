@@ -37,6 +37,7 @@ html {
     position: fixed;
     width: 100%;
     z-index: 1;
+    overflow: hidden;
 }
 
 #Nav {
@@ -94,6 +95,7 @@ html {
     font-size: 12px;
 }
 
+#Header .mobile-menu-button,
 #Header #Search {
     float: right;
 }
@@ -103,10 +105,27 @@ html {
     cursor: pointer;
 }
 
+#Header .mobile-menu-button:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+#Header .mobile-menu-button:hover .mobile-menu-icon {
+    color: #000;
+}
+
 #Header .search-icon {
     line-height: 46px;
     padding: 0 25px;
     color: white;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+#Header .mobile-menu-icon {
+    color: white;
+    line-height: 46px;
+    padding: 0 25px;
     font-size: 18px;
     font-weight: bolder;
 }

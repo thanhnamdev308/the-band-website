@@ -3,4 +3,12 @@
     #Nav li {
         display: block;
     }
+
+    #Search {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        
+    }
 }

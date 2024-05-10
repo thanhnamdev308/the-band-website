@@ -34,6 +34,9 @@
             <div id="Search">
                 <i class="search-icon ti-search"></i>
             </div>
+            <div id="mobile-menu" class="mobile-menu-button">
+                <i class="mobile-menu-icon ti-menu"></i>
+            </div>
         </div>
         <!-- End: Header section -->
 
@@ -222,6 +225,28 @@
         window.onclick = function (event) {
             if (event.target == modal) {
                 modal.style.display = "none";
+            }
+        }
+
+        var header = document.getElementById('Header');
+        var mobileMenu = document.getElementById('mobile-menu');
+        var headerHeight = header.clientHeight;
+
+        mobileMenu.onclick = function() {
+            var isClosed = header.clientHeight === headerHeight;
+            if (isClosed) {
+                header.style.height = 'auto';
+            } else {
+                header.style.height = null;
+            }
+        }
+
+        var menuItems = document.querySelectorAll('#Nav li a[href*="#"]')
+        for (var i = 0; i < menuItems.length; i++) {
+            var menuItem = menuItems[i];
+
+            menuItem.onclick = function () {
+                header.style.height = null;
             }
         }
     </script>
