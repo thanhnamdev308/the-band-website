@@ -41,4 +41,34 @@
     #Header .mobile-menu-button {
         display: block;
     }
+
+    .member-item {
+        float: none;
+        width: 100%;
+    }
+
+    .member-image {
+        width: 50%;
+    }
+
+    .member-name {
+        margin-top: 15px;
+    }
+
+    .ticket-item {
+        float: none;
+        width: 85%;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .place-list {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .ticket-section {
+        width: 100%;
+    }
 }
