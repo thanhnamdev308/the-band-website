@@ -15,7 +15,7 @@
         <div id="Header">
             <div id="Nav">
                 <ul id="NavList">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="#" id="Home">Home</a></li>
                     <li><a href="#Introduction">Band</a></li>
                     <li><a href="#Tourdates">Tour</a></li>
                     <li><a href="#Contact">Contact</a></li>
@@ -245,8 +245,13 @@
         for (var i = 0; i < menuItems.length; i++) {
             var menuItem = menuItems[i];
 
-            menuItem.onclick = function () {
-                header.style.height = null;
+            menuItem.onclick = function(event) {
+                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('MoreNav')
+                if (isParentMenu) {
+                    event.preventDefault();
+                } else {
+                    header.style.height = null;
+                }
             }
         }
     </script>

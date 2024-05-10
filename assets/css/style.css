@@ -37,7 +37,6 @@ html {
     position: fixed;
     width: 100%;
     z-index: 1;
-    overflow: hidden;
 }
 
 #Nav {
@@ -95,9 +94,15 @@ html {
     font-size: 12px;
 }
 
-#Header .mobile-menu-button,
 #Header #Search {
     float: right;
+}
+
+#Header .mobile-menu-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
 }
 
 #Header #Search:hover {
