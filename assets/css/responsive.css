@@ -71,4 +71,20 @@
     .ticket-section {
         width: 100%;
     }
+
+    .ticket-buy-button {
+        padding: 15px 16px;
+    }
+
+    #submit-form-button {
+        padding: 15px 20px;
+    }
+
+    #SocialNetwork a {
+        padding: 0 12px;
+    }
+
+    #Copyright {
+        padding: 15px 0;
+    }
 }
